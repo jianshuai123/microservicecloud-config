@@ -1,4 +1,4 @@
-spring:
+﻿spring:
   profiles:
     active:
       - dev
@@ -12,4 +12,4 @@ spring:
   profiles: test
   application:
     name: microservicecloud-config-atguigu-test
-#   璇蜂繚瀛樹负UTF-8鏍煎紡
+#   保存格式为UTF-8格式
