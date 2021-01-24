@@ -22,8 +22,8 @@ spring:
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml         # mybatis配置文件所在位置
   type-aliases-package: com.atguigu.springcloud.entities     # 所有entity别名所在包
-  mapper-locations: 
-  - classpath:mybatis/mapper/**/*.xml    
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml
 eureka:
   client:  #客户端注册eureka服务列表
     service-url:
@@ -31,6 +31,7 @@ eureka:
   instance:
     instance-id: dept-8001
     prefer-ip-address: true  #访问路径可以显示ip
+
 info:
   app.name: atguigu-microservicecloud
   company.name: www.atguige.com
@@ -55,21 +56,20 @@ spring:
       max-total: 5
       max-wait-millis: 200
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml  #mybatis所在路径
-  type-aliases-package: com.lei.springcloud.entities #entity别名类
+  config-location: classpath:mybatis/mybatis.cfg.xml         # mybatis配置文件所在位置
+  type-aliases-package: com.atguigu.springcloud.entities     # 所有entity别名所在包
   mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml #mapper映射文件
-      
+  - classpath:mybatis/mapper/**/*.xml     
 eureka:
-  client: #客户端注册进eureka服务列表内 
-    service-url: 
+  client: #客户端注册进eureka服务列表内
+    service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
     instance-id: dept-8001   #自定义服务名称信息
     prefer-ip-address: true     #访问路径可以显示IP地址
-      
+
 info:
-  app.name: atguigu-microservicecloud-springcloud-springcloudconfig01
-  company.name: www.lei.com
-  build.artifactId: ${project.artifactId}$
-  build.version: ${project.version}$    
+  app.name: atguigu-microservicecloud
+  company.name: www.atguige.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
