@@ -3,25 +3,25 @@
     active:
       - dev
 ---
-server:
-  port: 8201
+server: 
+  port: 8201 
 spring:
   profiles: dev
-  application:
+  application: 
     name: microservicecloud-config-client
-eureka:
-  client:
-  serveice-url:
-    defaultZone: http://eureka-dev.com:7001/eureka/
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka-dev.com:7001/eureka/   
 ---
-server:
-  port: 8202
+server: 
+  port: 8202 
 spring:
   profiles: test
-  application:
+  application: 
     name: microservicecloud-config-client
-eureka:
-  client:
-  serveice-url:
-    defaultZone: http://eureka-test.com:7001/eureka/
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka-test.com:7001/eureka/
 #   保存格式为UTF-8格式
